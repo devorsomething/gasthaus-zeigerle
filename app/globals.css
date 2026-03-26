@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", system-ui, sans-serif;
+    background-color: #faf8f0;
+    color: #2a2a2a;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-wheat text-charcoal font-semibold rounded-sm transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply bg-wheat-dark -translate-y-0.5 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 border-2 border-wheat text-wheat font-semibold rounded-sm transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-wheat text-charcoal -translate-y-0.5 shadow-lg;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl font-bold text-charcoal mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-charcoal-light text-lg max-w-2xl;
+  }
+
+  .menu-card {
+    @apply bg-white rounded-sm p-6 shadow-md border border-cream-dark/30 hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .review-card {
+    @apply bg-cream rounded-sm p-6 border-l-4 border-wheat;
+  }
+
+  .info-strip {
+    @apply bg-forest-green text-cream;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d5016;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3a0f;
+}
