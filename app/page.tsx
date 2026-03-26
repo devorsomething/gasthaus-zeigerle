@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import WhatsAppButton from '../components/WhatsAppButton'
 
 const menuItems = {
   vorspeisen: [
@@ -1082,6 +1083,7 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+      <WhatsAppButton phone="+43 664 000 0000" message="Hallo! Ich interessiere mich für Gasthaus Zeigerle." />
     </main>
   );
 }

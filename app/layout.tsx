@@ -20,6 +20,13 @@ export const metadata: Metadata = {
       "Tradition seit Generationen — Genießen Sie Wiener Schnitzel, Kässpätzle und mehr im Herzen von Bregenz.",
     locale: "de_AT",
     type: "website",
+    images: [{ url: '/og?name=Gasthaus%20Zeigerle&tagline=Tradition%20seit%20Generationen&color=%232D5016', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gasthaus Zeigerle',
+    description: 'Tradition seit Generationen',
+    images: ['/og'],
   },
 };
 
